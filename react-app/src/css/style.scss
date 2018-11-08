@@ -1,0 +1,25 @@
+$font: sans-serif;
+@mixin reset($value){
+	margin: $value;
+	padding: $value;
+}
+
+body {
+	font-family: $font;
+	@include reset(0);
+}
+a{
+	text-decoration: none
+}
+.container{
+	margin:0 auto;
+	width: 900px;
+}
+.center{
+	text-align:center;
+}
+@import "Components/header";
+@import "Components/section";
+@import "Components/footer";
+@import "Components/form";
+@import "Components/loader"; 
